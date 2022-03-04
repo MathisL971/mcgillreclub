@@ -1,0 +1,118 @@
+* {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0 0 55px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0 0 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.main-header {
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  padding: 0 15px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.header-container #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.header-container a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.header-container a.icon {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 15px;
+  padding: 10px 0;
+}
+
+.header-container a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.home-page-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/backgrounds/background_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-page {
+  width: 100%;
+  height: 765px;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+}
+
+.home-page-text {
+  width: 320px;
+  color: white;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  vertical-align: middle;
+  height: 600px;
+}
+
+.learn_more {
+  font-size: 20px;
+  padding: 10px 25px;
+  color: white;
+  background-color: red;
+  border-radius: 30px;
+  opacity: 100%;
+  box-shadow: 2px 2px 3px black;
+  text-decoration: none;
+}

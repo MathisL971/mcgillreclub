@@ -2,9 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="scriptsheet" href="scripts/script.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="header-logo">
+          <img src="images/logo_rajdhani.png" alt="mgrec-logo" style="height:60px;width:160px">
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="home-page-img"></div>
+    <div class="home-page">
+      <div class="home-page-text">
+        <h1>Kickstart your real estate career</h1>
+        <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
+        <a class="learn_more" href="sign_up.html">Learn More</a>
+      </div>
 
+    </div>
   </body>
 </html>
