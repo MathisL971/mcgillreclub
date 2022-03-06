@@ -5,38 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="scriptsheet" href="scripts/script.css">
+    <script src="scripts/script.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
   <body>
     <header class="main-header">
       <div class="header-container">
-        <a href="index.html" class="header-logo">
-          <img src="images/logo_rajdhani.png" alt="mgrec-logo" style="height:60px;width:160px">
+        <a class="header-logo" href="index.html">
+          <img src="images/logo_rajdhani.png" alt="mgrec-logo" style="height:62px;width:175px">
         </a>
-        <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <a class="toggle-button" href="#about">About</a>
+          <a class="toggle-button" href="#events">Events</a>
+          <a class="toggle-button" href="#gallery">Gallery</a>
+          <a class="toggle-button" href="#sponsors">Sponsors</a>
+          <span class=sign-up-button-wrapper><a class="sign-up-button" href="#sign-up">Join Us</a></span>
+          <hr id="header-menu-hr">
+          <div class="socials-logo-container" id="header">
+            <a href="#"><img src="images/icons/fb_icon.png" alt="facebook-icon" class="socials-icons"></a>
+            <a href="#"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+            <a href="#"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+            <a href="#"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+          </div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </header>
-    <div class="home-page-img"></div>
     <div class="home-page">
-      <div class="home-page-text">
-        <h1>Kickstart your real estate career</h1>
-        <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
-        <a class="learn_more" href="sign_up.html">Learn More</a>
+      <div class="home-page-wrapper">
+        <div class="home-page-text">
+          <h1>Kickstart your real estate career</h1>
+          <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
+          <a class="cta-button" href="sign_up.html">Learn More</a>
+        </div>
       </div>
-
     </div>
+    <div class="home-page-sponsors-container">
+      <div class="home-page-sponsors-text">
+        <h1>Become a sponsor</h1>
+        <p>Get privileged access to the best pool of talents in Montreal, continue to build awareness about your firm and get the opportunity to recruit top-level interns/entry level candidates</p>
+        <a class="cta-button" href="sign_up.html">Learn More</a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-menu-container">
+        <ul class="footer-menu">
+          <li><b>Explore</b></li>
+          <li><a class="footer-menu-button" href="#">Home</a></li>
+          <li><a class="footer-menu-button" href="#">About</a></li>
+          <li><a class="footer-menu-button" href="#">Events</a></li>
+          <li><a class="footer-menu-button" href="#">Gallery</a></li>
+          <li><a class="footer-menu-button" href="#">Sponsors</a></li>
+          <li><a class="sign-up-button" href="#sign-up">Join Us</a></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="socials-logo-container" id="footer">
+        <a href="#"><img src="images/icons/fb_icon.png" alt="facebook-icon" class="socials-icons"></a>
+        <a href="#"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+        <a href="#"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+        <a href="#"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+      </div>
+    </footer>
   </body>
 </html>

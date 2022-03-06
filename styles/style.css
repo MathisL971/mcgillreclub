@@ -1,59 +1,127 @@
 * {
   font-family: 'Rajdhani', sans-serif;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
-h1, h2, h3, h4, p {
-  margin: 0;
-  padding: 0 0 55px;
+footer {
+  background-color: lightgrey;
+  padding: 30px 0;
 }
-
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0 0 40px;
+}
 h1 {
   font-size: 60px;
   font-weight: 700;
-  padding: 0 0 40px;
 }
-
 p {
   font-size: 24px;
   font-weight: 400;
   line-height: 33px;
+  margin: 0 0 50px;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  line-height: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+}
+hr {
+  width: 80%;
+  margin: 20px auto;
+  background-color: lightgrey;
 }
 
+/* Buttons */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 110px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.cta-button {
+  font-size: 20px;
+  padding: 8px 30px;
+  color: white;
+  width: 150px;
+  background-color: red;
+  box-shadow: 2px 2px 3px black;
+}
+.sign-up-button-wrapper {
+  display: inline-block;
+  margin: 10px auto;
+}
+.sign-up-button {
+  font-size: 20px;
+  padding: 8px 25px;
+  color: white;
+  width: 100px;
+  background-color: red;
+  box-shadow: 2px 2px 3px black;
+}
+.cta-button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Socials */
+.socials-logo-container {
+  width: 276px;
+  height: 45px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+  display: flex;
+}
+.socials-logo-container a {
+  width: 69px;
+  height: 45px;
+}
+.socials-icons {
+  height: 45px;
+  width: 45px;
+  margin: 0 12px;
+
+}
+
+/* Header */
 .main-header {
   position: sticky;
   width: 100%;
-  height: 60px;
   padding: 10px 0;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 1);
 }
-
+.header-logo {
+  height: 62px;
+  width: 175px;
+}
 .header-container {
   position: relative;
-  height: 100%;
-  display: flex;
-  padding: 0 15px;
+  display: grid;
+  margin: 0 20px;
+  overflow: hidden;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
 .header-container #myLinks {
   display: none;
+  text-align: center;
+  width: 100%;
+  margin: 25px auto;
+  align-items: center;
 }
-
-/* Style navigation menu links */
 .header-container a {
-  color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   display: block;
 }
-
-/* Style the hamburger menu */
 .header-container a.icon {
   background: transparent;
   display: flex;
@@ -65,54 +133,108 @@ p {
   right: 15px;
   padding: 10px 0;
 }
-
 .header-container a:hover {
   background-color: #ddd;
   color: black;
 }
-
 .active {
-  background-color: #04AA6D;
+  background-color: red;
   color: white;
 }
+#header-menu-hr {
+  width: 80%;
+  margin: 20px auto;
+  background-color: lightgrey;
+}
 
-.home-page-img {
-  position: absolute;
-  top: 0;
-  z-index: -1;
+/* Home Page Join Us Section */
+.home-page {
   width: 100%;
-  height: 100%;
+  height: 765px;
   background-image: url(../images/backgrounds/background_1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.home-page {
+.home-page-wrapper {
+  background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
   height: 765px;
-  background-color: rgba(0, 0, 0, 0.55);
-  display: flex;
+  position: relative;
+}
+.home-page-text {
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.home-page-text {
-  width: 320px;
-  color: white;
+/* Home Page Sponsor Section */
+.home-page-sponsors-container {
+  width: 100%;
+  height: 720px;
+  display: flex;
+}
+.home-page-sponsors-text {
+  width: 80%;
   margin: 0 auto;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
   vertical-align: middle;
-  height: 600px;
 }
 
-.learn_more {
-  font-size: 20px;
-  padding: 10px 25px;
-  color: white;
-  background-color: red;
-  border-radius: 30px;
-  opacity: 100%;
-  box-shadow: 2px 2px 3px black;
-  text-decoration: none;
+/* Footer */
+.footer-menu-container {
+  display: flex;
+  padding: 0;
+}
+.footer-menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Desktop Media Query */
+@media only screen and (min-width: 1010px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-container #myLinks {
+    display: flex;
+    width: 800px;
+    justify-content: flex-end;
+    margin: 0 5px 0 25px;
+
+  }
+  .header-container a {
+    margin: 0;
+    display: inline-block;
+  }
+  .header-container a.icon {
+    display: none;
+  }
+  .toggle-button {
+    width: 100px;
+    margin: 0;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .sign-up-button-wrapper {
+    margin: 0 5px 0 25px;
+  }
+  #header-menu-hr {
+    display: none;
+  }
+  .socials-logo-container {
+    display: none;
+  }
 }
