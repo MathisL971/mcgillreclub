@@ -9,24 +9,16 @@ footer {
   background-color: lightgrey;
   padding: 30px 0;
 }
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0 0 40px;
-}
 h1 {
+  margin: 20px 0;
   font-size: 60px;
   font-weight: 700;
+  color: white;
 }
-p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 33px;
-  margin: 0 0 50px;
-}
-li {
-  list-style: none;
-  font-size: 20px;
-  line-height: 40px;
+h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
 }
 a {
   text-decoration: none;
@@ -35,14 +27,14 @@ a {
 }
 hr {
   width: 80%;
-  margin: 20px auto;
+  margin: 25px auto;
   background-color: lightgrey;
 }
 
 /* Buttons */
 .toggle-button {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   width: 110px;
   display: inline-block;
   margin: 0 auto;
@@ -57,11 +49,11 @@ hr {
 }
 .sign-up-button-wrapper {
   display: inline-block;
-  margin: 10px auto;
+  margin: 5px 10px;
 }
 .sign-up-button {
   font-size: 20px;
-  padding: 8px 25px;
+  padding: 5px 25px;
   color: white;
   width: 100px;
   background-color: red;
@@ -73,7 +65,7 @@ hr {
 }
 
 /* Socials */
-.socials-logo-container {
+.socials-logo-container-header {
   width: 276px;
   height: 45px;
   text-align: center;
@@ -81,7 +73,19 @@ hr {
   margin: 0 auto;
   display: flex;
 }
-.socials-logo-container a {
+.socials-logo-container-header a {
+  width: 69px;
+  height: 45px;
+}
+.socials-logo-container-footer {
+  width: 276px;
+  height: 45px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+  display: flex;
+}
+.socials-logo-container-footer a {
   width: 69px;
   height: 45px;
 }
@@ -134,72 +138,33 @@ hr {
   padding: 10px 0;
 }
 .header-container a:hover {
-  background-color: #ddd;
+  background-color: lightgrey;
   color: black;
 }
-.active {
+/* .active {
   background-color: red;
   color: white;
-}
+}*/
 #header-menu-hr {
   width: 80%;
   margin: 20px auto;
   background-color: lightgrey;
 }
 
-/* Home Page Join Us Section */
-.home-page {
-  width: 100%;
-  height: 765px;
-  background-image: url(../images/backgrounds/background_1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.home-page-wrapper {
-  background-color: rgba(0, 0, 0, 0.55);
-  width: 100%;
-  height: 765px;
-  position: relative;
-}
-.home-page-text {
-  width: 80%;
-  color: white;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* Home Page Sponsor Section */
-.home-page-sponsors-container {
-  width: 100%;
-  height: 720px;
-  display: flex;
-}
-.home-page-sponsors-text {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  vertical-align: middle;
-}
-
 /* Footer */
 .footer-menu-container {
-  display: flex;
   padding: 0;
 }
 .footer-menu {
+  display: grid;
   margin-top: auto;
   margin-bottom: auto;
   padding: 0;
   margin: 0 auto;
   text-align: center;
+}
+.footer-menu a {
+  line-height: 35px;
 }
 
 /* Desktop Media Query */
@@ -228,13 +193,11 @@ hr {
     text-align: center;
     padding: 15px 20px;
   }
-  .sign-up-button-wrapper {
-    margin: 0 5px 0 25px;
-  }
+
   #header-menu-hr {
     display: none;
   }
-  .socials-logo-container {
+  .socials-logo-container-header {
     display: none;
   }
 }

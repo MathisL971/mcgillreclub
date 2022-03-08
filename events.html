@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/events.css">
     <script src="scripts/script.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,22 +37,64 @@
         </a>
       </div>
     </header>
-    <div class="home-page">
-      <div class="home-page-wrapper">
-        <div class="home-page-text">
-          <h1>Kickstart your real estate career</h1>
-          <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
-          <a class="cta-button" href="sign_up.html">Learn More</a>
+
+    <div class="events-wrapper">
+      <div class="events-container">
+        <h1 style="color:black">What We Offer</h1>
+        <div class="accordion-wrapper">
+          <button class="accordion">Guest Speakers</button>
+          <div class="panel">
+            <p>We will be holding multiple guest speaker events where students will have the opportunity to interact with Real Estate professionals. Some of our previous speakers include: Investors, Residential Real Estate Agents, Commercial Real Estate Agents, Real Estate Developers, Architects, Mortgage Brokers</p>
+          </div>
+
+          <button class="accordion">Case Competitions</button>
+          <div class="panel">
+            <p>We are proud to host our first ever case competition this year, which will allow teams of students from different universities to put their analysis and communication skills to the test by solving complex real estate problems. As they did last year, students on the executive team will be travelling to Toronto in February for Ryerson University’s case competition: “Expand Your Empire”.</p>
+          </div>
+
+          <button class="accordion">Networking & Recruitment Cocktail</button>
+          <div class="panel">
+            <p>Once a semester, the McGill Real Estate Club hosts a networking cocktail. There is usually one guest speaker and a networking cocktail follows. Many professionals from the Real Estate industry are invited to network with McGill’s most elite and determined students looking for job opportunities in the Real Estate sector.</p>
+          </div>
+
+          <button class="accordion">Excel and ARGUS Modeling Program</button>
+          <div class="panel">
+            <p>Students on the executive team will organize an Excel and ARGUS Modeling Session for students. A banker will teach students valuable real estate skills such as property valuation, cash flows, expenses, cap rates, NOI, etc.</p>
+          </div>
+
+          <button class="accordion">Peer Mentorship Program</button>
+          <div class="panel">
+            <p>LStudents on the executive team will organize meetings with other members where they will share their current knowledge of the Real Estate world. (Past internships, day-to-day knowledge…)</p>
+          </div>
+
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            });
+          }
+          </script>
         </div>
       </div>
     </div>
-    <div class="home-page-sponsors-container">
-      <div class="home-page-sponsors-text">
-        <h1 style="color:black">Become a sponsor</h1>
-        <p>Get privileged access to the best pool of talents in Montreal, continue to build awareness about your firm and get the opportunity to recruit top-level interns/entry level candidates</p>
-        <a class="cta-button" href="sign_up.html">Learn More</a>
+
+    <div class="calendar-wrapper">
+      <div class="calendar-container">
+        <h1 style="color:black">Upcoming Events</h1>
+        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=lefrancmathis%40gmail.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
+
+
     <footer>
       <div class="footer-menu-container">
         <div class="footer-menu">

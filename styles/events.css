@@ -1,0 +1,92 @@
+
+/* 1st Section */
+.events-wrapper {
+  width: 100%;
+  background-image: url(../images/backgrounds/event.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.events-container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 85%;
+  text-align: center;
+}
+
+/* 2nd Section */
+.calendar-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.calendar-container {
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 85%;
+}
+
+
+.text-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+.text-wrapper p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin: 10px 0;
+}
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-wrapper {
+  display: inline-block;
+  margin: 20px 0;
+  width: 100%
+}
+.accordion {
+  background-color: #eee;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: lightblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+.panel p {
+  color: black;
+  font-size: 18px;
+  margin: 15px 0;
+  text-align: left;
+}
