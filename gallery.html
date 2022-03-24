@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is the official website of the real estate club at McGill University">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <title></title>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <div class="gallery-wrapper">
+      <div class="gallery-container">
+        <img src="images/icons/gallery-red.png" alt="gallery-icon">
+        <h3>PAST EVENTS</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Getting into Real Estate 2018</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Let’s Talk Real Estate 2018</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Guest Speaker Series March 2018</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Guest Speaker Series February 2018</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Guest Speaker Series January 2018</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>ARGUS Financial Modelling Workshop Fall 2017</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-title">
+          <h4>Recruitment and Networking Cocktail Fall 2017</h4>
+        </div>
+        <div class="event-carousel">
+          <div class="scroller-left">
+            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+          </div>
+          <div class="scroller-right">
+            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+          </div>
+        </div>
+      </div>
+      <!--
+      <section class="row">
+        <div class="nine columns">
+          <div class="coverflow top10 bot10">
+            <a class="prev-arrow"></a>
+            <a href=""><img src="images/gallery/getting-into-real-estate/IMG_1932.jpeg" class="coverflow__image" /></a>
+            <a href=""><img src="images/gallery/getting-into-real-estate/IMG_1935.jpeg" class="coverflow__image" /></a>
+            <a href=""><img src="images/gallery/getting-into-real-estate/IMG_1938.jpeg" class="coverflow__image" /></a>
+            <a href=""><img src="images/gallery/getting-into-real-estate/IMG_1940.jpeg" class="coverflow__image" /></a>
+            <a href=""><img src="images/gallery/getting-into-real-estate/IMG_1945.jpeg" class="coverflow__image" /></a>
+            <a class="next-arrow"></a>
+          </div>
+        </div>
+      </section>
+
+      <script type="text/javascript">
+        /*------------------------------
+                Album Cover Slider
+        --------------------------------*/
+        //start added by Chase
+        var a = document.getElementsByTagName("a");
+        var cfImg = document.getElementsByClassName("coverflow__image")
+
+        var scaleI = 0;
+        for (scaleI; scaleI < a.length; scaleI++) {
+          if (scaleI === 3) {
+            continue;
+          } else {
+            a[scaleI].style.cursor = "default";
+            a[scaleI].addEventListener("click", prevDef);
+          }
+        }
+
+        function prevDef(e) {
+          e.preventDefault();
+        }
+        function forScale(coverflowPos) {
+          for (scaleI = 0; scaleI < a.length; scaleI++) {
+            a[scaleI].style.cursor = "default";
+            a[scaleI].addEventListener("click", prevDef);
+          }
+          for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
+            if (cfImg[scaleI].getAttribute("data-coverflow-index") == coverflowPos) {
+              cfImg[scaleI].parentElement.style.cursor = "pointer";
+              cfImg[scaleI].parentElement.removeEventListener("click", prevDef);
+            }
+          }
+        }
+        //end added by Chase
+        function setupCoverflow(coverflowContainer) {
+          var coverflowContainers;
+
+          if (typeof coverflowContainer !== "undefined") {
+            if (Array.isArray(coverflowContainer)) {
+              coverflowContainers = coverflowContainer;
+            } else {
+              coverflowContainers = [coverflowContainer];
+            }
+          } else {
+            coverflowContainers = Array.prototype.slice.apply(document.getElementsByClassName('coverflow'));
+          }
+
+          coverflowContainers.forEach(function(containerElement) {
+            var coverflow = {};
+            var prevArrows, nextArrows;
+
+            //capture coverflow elements
+            coverflow.container = containerElement;
+            coverflow.images = Array.prototype.slice.apply(containerElement.getElementsByClassName('coverflow__image'));
+            coverflow.position = Math.floor(coverflow.images.length / 2) + 1;
+
+            //set indicies on images
+            coverflow.images.forEach(function(coverflowImage, i) {
+              coverflowImage.dataset.coverflowIndex = i + 1;
+            });
+
+            //set initial position
+            coverflow.container.dataset.coverflowPosition = coverflow.position;
+
+            //get prev/next arrows
+            prevArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("prev-arrow"));
+            nextArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("next-arrow"));
+
+            //add event handlers
+            function setPrevImage() {
+              coverflow.position = Math.max(1, coverflow.position - 1);
+              coverflow.container.dataset.coverflowPosition = coverflow.position;
+              //call the functin forScale added
+              forScale(coverflow.position);
+            }
+
+            function setNextImage() {
+              coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
+              coverflow.container.dataset.coverflowPosition = coverflow.position;
+              //call the function Chase added
+              forScale(coverflow.position);
+            }
+
+            function jumpToImage(evt) {
+              coverflow.position = Math.min(coverflow.images.length, Math.max(1, evt.target.dataset.coverflowIndex));
+              coverflow.container.dataset.coverflowPosition = coverflow.position;
+              //start added by Chase
+              setTimeout(function() {
+                forScale(coverflow.position);
+              }, 1);
+              //end added by Chase
+            }
+
+            function onKeyPress(evt) {
+              switch (evt.which) {
+                case 37: //left arrow
+                  setPrevImage();
+                  break;
+                case 39: //right arrow
+                  setNextImage();
+                  break;
+              }
+            }
+            prevArrows.forEach(function(prevArrow) {
+              prevArrow.addEventListener('click', setPrevImage);
+            });
+            nextArrows.forEach(function(nextArrow) {
+              nextArrow.addEventListener('click', setNextImage);
+            });
+            coverflow.images.forEach(function(image) {
+              image.addEventListener('click', jumpToImage);
+            });
+            window.addEventListener('keyup', onKeyPress);
+          });
+        }
+        setupCoverflow();
+      </script>
+      -->
+
+    </div>
+
+
+
+
+
+    <footer>
+      <div class="footer-menu-container">
+        <div class="footer-menu">
+          <h4><b>EXPLORE</b></h4>
+          <a class="footer-menu-button" href="index.html">Home</a>
+          <a class="footer-menu-button" href="about.html">About</a>
+          <a class="footer-menu-button" href="events.html">Events</a>
+          <a class="footer-menu-button" href="gallery.html">Gallery</a>
+          <a class="footer-menu-button" href="sponsors.html">Sponsors</a>
+        </div>
+        <div class="footer-menu">
+          <h4><b>MORE</b></h4>
+          <a class="footer-menu-button" href="sign-up.html">Join Us</a>
+          <a class="footer-menu-button" href="sign-up.html">Contacts</a>
+          <a class="footer-menu-button" href="sign-up.html">Newsletter</a>
+        </div>
+        <div class="socials-logo-container-footer">
+          <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>
+          <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+          <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+          <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+        </div>
+      </div>
+      <hr>
+      <div style="width:82%;margin:0 auto;">
+        <p>Designed by Mathis Lefranc</p>
+      </div>
+    </footer>
+  </body>
+</html>

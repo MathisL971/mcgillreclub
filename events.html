@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="This is the official website of the real estate club at McGill University">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -9,60 +10,47 @@
     <script src="scripts/script.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <title></title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="header-container">
-        <a class="header-logo" href="index.html">
-          <img src="images/logo_rajdhani.png" alt="mgrec-logo" style="height:62px;width:175px">
-        </a>
-        <div id="myLinks">
-          <a class="toggle-button" href="index.html">Home</a>
-          <a class="toggle-button" href="about.html">About</a>
-          <a class="toggle-button" href="events.html">Events</a>
-          <a class="toggle-button" href="gallery.html">Gallery</a>
-          <a class="toggle-button" href="sponsors.html">Sponsors</a>
-          <span class=sign-up-button-wrapper><a class="sign-up-button" href="#sign-up">Join Us</a></span>
-          <hr id="header-menu-hr">
-          <div class="socials-logo-container-header">
-            <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon" class="socials-icons"></a>
-            <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
-            <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
-            <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
-          </div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </header>
+    <header-component></header-component>
 
     <div class="events-wrapper">
       <div class="events-container">
-        <h1 style="color:black">What We Offer</h1>
-        <div class="accordion-wrapper">
-          <button class="accordion">Guest Speakers</button>
+        <img src="images/icons/calendar-red.png" alt="calendar-icon">
+        <h3>UPCOMING EVENTS</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+      <div class="calendar-wrapper">
+        <div class="calendar-container">
+          <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=lefrancmathis%40gmail.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+      <div class="accordion-wrapper">
+        <div class="accordion-container">
+          <button class="accordion">GUEST SPEAKERS</button>
           <div class="panel">
             <p>We will be holding multiple guest speaker events where students will have the opportunity to interact with Real Estate professionals. Some of our previous speakers include: Investors, Residential Real Estate Agents, Commercial Real Estate Agents, Real Estate Developers, Architects, Mortgage Brokers</p>
           </div>
 
-          <button class="accordion">Case Competitions</button>
+          <button class="accordion">CASE COMPETITION</button>
           <div class="panel">
             <p>We are proud to host our first ever case competition this year, which will allow teams of students from different universities to put their analysis and communication skills to the test by solving complex real estate problems. As they did last year, students on the executive team will be travelling to Toronto in February for Ryerson University’s case competition: “Expand Your Empire”.</p>
           </div>
 
-          <button class="accordion">Networking & Recruitment Cocktail</button>
+          <button class="accordion">NETWORKING & RECRUITMENT COCKTAIL</button>
           <div class="panel">
             <p>Once a semester, the McGill Real Estate Club hosts a networking cocktail. There is usually one guest speaker and a networking cocktail follows. Many professionals from the Real Estate industry are invited to network with McGill’s most elite and determined students looking for job opportunities in the Real Estate sector.</p>
           </div>
 
-          <button class="accordion">Excel and ARGUS Modeling Program</button>
+          <button class="accordion">EXCEL AND ARGUS MODELING WORKSHOP</button>
           <div class="panel">
             <p>Students on the executive team will organize an Excel and ARGUS Modeling Session for students. A banker will teach students valuable real estate skills such as property valuation, cash flows, expenses, cap rates, NOI, etc.</p>
           </div>
 
-          <button class="accordion">Peer Mentorship Program</button>
+          <button class="accordion">PEER MENTORSHIP PROGRAM</button>
           <div class="panel">
             <p>LStudents on the executive team will organize meetings with other members where they will share their current knowledge of the Real Estate world. (Past internships, day-to-day knowledge…)</p>
           </div>
@@ -87,32 +75,35 @@
       </div>
     </div>
 
-    <div class="calendar-wrapper">
-      <div class="calendar-container">
-        <h1 style="color:black">Upcoming Events</h1>
-        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=lefrancmathis%40gmail.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
+
 
 
     <footer>
       <div class="footer-menu-container">
         <div class="footer-menu">
-          <h4><b>Explore</b></h4>
-          <a class="footer-menu-button" href="#">Home</a>
+          <h4><b>EXPLORE</b></h4>
+          <a class="footer-menu-button" href="index.html">Home</a>
           <a class="footer-menu-button" href="about.html">About</a>
-          <a class="footer-menu-button" href="#">Events</a>
-          <a class="footer-menu-button" href="#">Gallery</a>
-          <a class="footer-menu-button" href="#">Sponsors</a>
-          <span class=sign-up-button-wrapper><a class="sign-up-button" href="#sign-up">Join Us</a></span>
+          <a class="footer-menu-button" href="events.html">Events</a>
+          <a class="footer-menu-button" href="gallery.html">Gallery</a>
+          <a class="footer-menu-button" href="sponsors.html">Sponsors</a>
+        </div>
+        <div class="footer-menu">
+          <h4><b>MORE</b></h4>
+          <a class="footer-menu-button" href="sign-up.html">Join Us</a>
+          <a class="footer-menu-button" href="sign-up.html">Contacts</a>
+          <a class="footer-menu-button" href="sign-up.html">Newsletter</a>
+        </div>
+        <div class="socials-logo-container-footer">
+          <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>
+          <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+          <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+          <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
         </div>
       </div>
       <hr>
-      <div class="socials-logo-container-footer">
-        <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>
-        <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
-        <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
-        <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+      <div style="width:82%;margin:0 auto;">
+        <p>Designed by Mathis Lefranc</p>
       </div>
     </footer>
   </body>

@@ -2,16 +2,19 @@
 /* 1st Section */
 .events-wrapper {
   width: 100%;
-  background-image: url(../images/backgrounds/event.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .events-container {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 70px 0;
   width: 85%;
-  text-align: center;
+  text-align: left;
+}
+.events-container h3 {
+  color: #C10000;
+  margin: 5px 0 25px;
+}
+.events-container img {
+  width: 70px;
 }
 
 /* 2nd Section */
@@ -21,39 +24,33 @@
 }
 .calendar-container {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 15px 0;
   width: 85%;
 }
-
-
-.text-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  color: white;
+.calendar-container h1 {
+  color: black;
 }
-.text-wrapper p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 33px;
-  margin: 10px 0;
-}
-
-
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion-wrapper {
   display: inline-block;
-  margin: 20px 0;
+  margin: 70px 0;
   width: 100%
 }
+.accordion-container {
+  width: 85%;
+  margin: 0 auto;
+}
 .accordion {
-  background-color: #eee;
-  color: black;
-  font-size: 22px;
+  background: #1D376D;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 25px;
+  margin-top: 10px;
   width: 100%;
   text-align: left;
   border: none;
@@ -62,7 +59,7 @@
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #1D376D;
 }
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -70,6 +67,7 @@
   color: #777;
   float: right;
   margin-left: 5px;
+  border-radius: 40px 40px 0 0;
 }
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
@@ -77,16 +75,24 @@
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: lightblue;
+  border-radius: 40px;
+  padding: 0 25px;
+  margin: 0 auto;
+  background: lightgrey;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-
 }
 .panel p {
   color: black;
   font-size: 18px;
-  margin: 15px 0;
+  margin: 25px 0;
   text-align: left;
+}
+
+
+@media only screen and (min-width: 1100px) {
+  .events-container, .calendar-container, .accordion-container {
+    width: 65%;
+  }
 }

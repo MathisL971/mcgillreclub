@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is the official website of the real estate club at McGill University">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sponsors-contact.css">
+    <script src="scripts/script.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <title></title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+
+      <div class="sponsors-contact-background">
+        <div class="sponsors-contact-wrapper">
+          <div class="sponsors-contact-container">
+            <img src="images/icons/contact-icon.png" alt="sponsors-contact-icon">
+            <h3>GET IN TOUCH</h3>
+            <div class="contact-form-container">
+              <form action="index.html" method="post">
+                <div class="first-name">
+                  <input type="text" id="first-name" name="first-name" value="First Name" required="" size="20">
+                </div>
+                <div class="last-name">
+                  <input type="text" id="last-name" name="last-name" value="Last Name" required="" size="20">
+                </div>
+                <div class="email">
+                  <input type="email" id="email" value="Email Address" pattern="" size="40" required="">
+                </div>
+                <div class="phone-number">
+                  <input type="tel" id="phone" name="phone" value="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                </div>
+                <div class="text-area">
+                  <textarea name="message" id="message" cols="30" rows="10">Enter your message</textarea>
+                </div>
+                <div class="submit-button">
+                  <input class="submit-button-form" type="submit" name="submit_button" value="SUBMIT">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

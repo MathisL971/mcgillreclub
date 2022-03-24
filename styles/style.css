@@ -10,15 +10,28 @@ footer {
   padding: 30px 0;
 }
 h1 {
-  margin: 20px 0;
-  font-size: 60px;
+  margin: 0 0 40px;
+  padding: 0;
+  font-size: 50px;
   font-weight: 700;
   color: white;
+  line-height: 60px;
+}
+h2 {
+  font-size: 30px;
+  margin: 0 0 20px;
+
+}
+h3 {
+  font-size: 26px;
+  color: #C10000;
 }
 h4 {
+  font-size: 20px;
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
+  color: darkgrey;
+  margin-bottom: 10px;
 }
 a {
   text-decoration: none;
@@ -26,17 +39,23 @@ a {
   border-radius: 30px;
 }
 hr {
-  width: 80%;
-  margin: 25px auto;
+  width: 85%;
+  margin: 20px auto;
   background-color: lightgrey;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 0 40px;
 }
 
 /* Buttons */
 .toggle-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  width: 110px;
   display: inline-block;
+  padding: 10px 20px;
+  font-size: 19px;
+  width: 110px;
   margin: 0 auto;
 }
 .cta-button {
@@ -44,20 +63,24 @@ hr {
   padding: 8px 30px;
   color: white;
   width: 150px;
-  background-color: red;
-  box-shadow: 2px 2px 3px black;
+  background: #C10000;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .sign-up-button-wrapper {
   display: inline-block;
-  margin: 5px 10px;
+  margin-top: 10px;
 }
 .sign-up-button {
   font-size: 20px;
-  padding: 5px 25px;
+  padding: 7px 15px;
   color: white;
   width: 100px;
-  background-color: red;
-  box-shadow: 2px 2px 3px black;
+  background-color: #C10000;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.sign-up-button:hover {
+  background-color: lightgrey;
+  color: black;
 }
 .cta-button:hover {
   background-color: lightgrey;
@@ -69,61 +92,65 @@ hr {
   width: 276px;
   height: 45px;
   text-align: center;
-  padding: 5px 0;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .socials-logo-container-header a {
   width: 69px;
   height: 45px;
 }
 .socials-logo-container-footer {
-  width: 276px;
-  height: 45px;
   text-align: center;
-  padding: 5px 0;
-  margin: 0 auto;
+  margin: 0;
+  flex-flow: column;
   display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 .socials-logo-container-footer a {
-  width: 69px;
+  width: 45px;
   height: 45px;
+  margin: 0 0 5px;
+
 }
 .socials-icons {
   height: 45px;
   width: 45px;
-  margin: 0 12px;
-
 }
 
 /* Header */
 .main-header {
   position: sticky;
   width: 100%;
-  padding: 10px 0;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 1);
 }
+.main-header hr {
+  margin: 25px auto;
+}
 .header-logo {
-  height: 62px;
-  width: 175px;
+  height: 50px;
+  width: 150px;
+  padding: 5px 0;
 }
 .header-container {
-  position: relative;
   display: grid;
   margin: 0 20px;
+  padding: 10px 0;
   overflow: hidden;
 }
 .header-container #myLinks {
   display: none;
   text-align: center;
   width: 100%;
-  margin: 25px auto;
   align-items: center;
+  padding: 20px 0;
 }
 .header-container a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   display: block;
 }
 .header-container a.icon {
@@ -138,37 +165,57 @@ hr {
   padding: 10px 0;
 }
 .header-container a:hover {
-  background-color: lightgrey;
   color: black;
 }
-/* .active {
+.active {
   background-color: red;
   color: white;
-}*/
-#header-menu-hr {
-  width: 80%;
-  margin: 20px auto;
-  background-color: lightgrey;
 }
 
+
 /* Footer */
-.footer-menu-container {
+footer {
+  margin: 0;
   padding: 0;
+}
+.footer-menu-container {
+  width: 82%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-menu {
-  display: grid;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
+  display: inline-flex;
+  flex-flow: column;
 }
 .footer-menu a {
-  line-height: 35px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.footer-menu h4 {
+  font-size: 21px;
+}
+footer hr {
+  margin: 10px auto 0;
+  background-color: black;
+  width: 82%;
+}
+footer p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 15px;
 }
 
 /* Desktop Media Query */
-@media only screen and (min-width: 1010px) {
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  p {
+    font-size: 20px;
+  }
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -176,9 +223,10 @@ hr {
   .header-container #myLinks {
     display: flex;
     width: 800px;
+    height: 50px;
     justify-content: flex-end;
-    margin: 0 5px 0 25px;
-
+    margin: 0 5px 0 0;
+    padding: 5px 0;
   }
   .header-container a {
     margin: 0;
@@ -188,12 +236,14 @@ hr {
     display: none;
   }
   .toggle-button {
-    width: 100px;
     margin: 0;
     text-align: center;
-    padding: 15px 20px;
+    padding: 0 20px 0;
   }
-
+  .sign-up-button-wrapper {
+    margin-left: 24px;
+    margin-top: 0;
+  }
   #header-menu-hr {
     display: none;
   }
