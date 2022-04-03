@@ -15,8 +15,7 @@ footerTemplate.innerHTML = `
       <div class="footer-menu">
         <h4><b>MORE</b></h4>
         <a class="footer-menu-button" href="sign-up.html">Join Us</a>
-        <a class="footer-menu-button" href="sign-up.html">Contacts</a>
-        <a class="footer-menu-button" href="sign-up.html">Newsletter</a>
+        <a class="footer-menu-button" href="sponsors-contact.html">Contacts</a>
       </div>
       <div class="socials-logo-container-footer">
         <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>

@@ -1,26 +1,34 @@
-
+.sign-up-page-background {
+  width: 100%;
+  background-image: url(../images/backgrounds/background_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .sign-up-page-wrapper {
   width: 100%;
   padding: 70px 0;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 .sign-up-page-container {
   width: 85%;
   margin: 0 auto;
 }
-
 .membership {
-  width: 285px;
   border-radius: 40px;
-  border: 2px solid black;
+  border: 3px solid black;
   text-align: center;
-  padding: 20px;
+  padding: 25px 20px;
   margin: 0 auto;
+  background-color: white;
 }
-.membership h4 {
-  color: black;
+.membership h3 {
+  color: #C10000;
+  margin: 0;
+  margin-bottom: 5px;
 }
 .membership p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .purchase-button {
   margin: 0;
@@ -38,12 +46,18 @@
 }
 
 .membership-info {
-  padding-top: 50px;
+  background-color: white;
   margin: 0 auto;
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 40px;
+  border: 3px solid black;
 }
-.membership-info h2 {
+.membership-info h3 {
   color: #C10000;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .membership-info ul {
   margin-bottom: 40px;
@@ -65,5 +79,17 @@
 @media only screen and (min-width: 1100px) {
   .sign-up-page-container {
     width: 65%;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .membership {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .membership-info {
+    width: 600px;
   }
 }

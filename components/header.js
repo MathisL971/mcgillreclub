@@ -2,6 +2,7 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <header class="main-header">
     <div class="header-container">
       <a class="header-logo" href="index.html">
