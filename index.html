@@ -7,66 +7,122 @@
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/script.js" type="text/javascript" charset="utf-8" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <header-component></header-component>
-    <div class="home-page-background">
-      <div class="home-page-wrapper">
-        <div class="home-page-container">
-          <h1>Kickstart your real estate career</h1>
-          <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
-          <a class="cta-button" href="sign-up.html">Learn More</a>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a style="padding: 0 0;height: 50px;" href="index.html">
+          <img src="images/logo-copy.png" alt="">
+        </a>
+        <a href="index.html">
+          <div class="title-top">
+            Real Estate Club
+          </div>
+          <div class="title-bottom">
+            at McGill
+          </div>
+        </a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="home-page-background">
+        <div class="home-page-wrapper">
+          <div class="home-page-container">
+            <h1>Kickstart your real estate career</h1>
+            <p>We provide our members with hands-on experience, opportunities to grow their professional network, and life-long relationships</p>
+            <a class="cta-button" href="sign-up.html">Learn More</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="home-page-wwo-wrapper">
-      <div class="home-page-wwo-container">
-        <h2>WHAT WE OFFER</h2>
-        <p>We provide our member with exclusive events throughout the semester with the goal of providing them with the tools and skills necessary for them to be successful in the industry</p>
-        <a class="cta-button" href="events.html">Explore Upcoming Events</a>
-        <div class="wwo-bubbles">
-          <div class="bubble">
-            <div class="bubble-content">
-              <img src="images/icons/speaker-white.png" alt="guest-speaker-icon">
-              <h4>GUEST SPEAKERS</h4>
+      <div class="home-page-wwo-wrapper">
+        <div class="home-page-wwo-container">
+          <h2>WHAT WE OFFER</h2>
+          <p>We provide our member with exclusive events throughout the semester with the goal of providing them with the tools and skills necessary for them to be successful in the industry</p>
+          <a class="cta-button" href="events.html">Explore Upcoming Events</a>
+          <div class="wwo-bubbles">
+            <div class="bubble">
+              <div class="bubble-content">
+                <img src="images/icons/speaker-white.png" alt="guest-speaker-icon">
+                <h4>GUEST SPEAKERS</h4>
+              </div>
             </div>
-          </div>
-          <div class="bubble">
-            <div class="bubble-content">
-              <img src="images/icons/networking-white.png" alt="networking-icon" style="width:60px">
-              <h4>NETWORKING & RECRUITMENT</h4>
+            <div class="bubble">
+              <div class="bubble-content">
+                <img src="images/icons/networking-white.png" alt="networking-icon" style="width:60px">
+                <h4>NETWORKING & RECRUITMENT</h4>
+              </div>
             </div>
-          </div>
-          <div class="bubble">
-            <div class="bubble-content">
-              <img src="images/icons/competition-white.png" alt="case-competition-icon" style="width:60px">
-              <h4 style="margin-top:0">CASE COMPETITION</h4>
+            <div class="bubble">
+              <div class="bubble-content">
+                <img src="images/icons/competition-white.png" alt="case-competition-icon" style="width:60px">
+                <h4 style="margin-top:0">CASE COMPETITION</h4>
+              </div>
             </div>
-          </div>
-          <div class="bubble">
-            <div class="bubble-content">
-              <img src="images/icons/learning-white.png" alt="leanring-icon">
-              <h4>WORKSHOPS & MENTORSHIP</h4>
+            <div class="bubble">
+              <div class="bubble-content">
+                <img src="images/icons/learning-white.png" alt="leanring-icon">
+                <h4>WORKSHOPS & MENTORSHIP</h4>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-    </div>
-    <div class="home-page-sponsors-background">
-      <div class="home-page-sponsors-wrapper">
-        <div class="home-page-sponsors-container">
-          <h1>Become a sponsor</h1>
-          <p>Get privileged access to the best pool of talents in Montreal, continue to build awareness about your firm and get the opportunity to recruit top-level interns/entry level candidates</p>
-          <a class="cta-button" href="sponsors.html">Learn More</a>
+      <div class="home-page-sponsors-background">
+        <div class="home-page-sponsors-wrapper">
+          <div class="home-page-sponsors-container">
+            <h1>Become a sponsor</h1>
+            <p>Get privileged access to the best pool of talents in Montreal, continue to build awareness about your firm and get the opportunity to recruit top-level interns/entry level candidates</p>
+            <a class="cta-button" href="sponsors.html">Learn More</a>
+          </div>
         </div>
       </div>
-    </div>
-    <footer-component></footer-component>
+    </main>
+    <footer>
+      <div class="footer-menu-container">
+        <div class="footer-menu">
+          <h4><b>EXPLORE</b></h4>
+          <a class="footer-menu-button" href="index.html">Home</a>
+          <a class="footer-menu-button" href="about.html">About</a>
+          <a class="footer-menu-button" href="events.html">Events</a>
+          <a class="footer-menu-button" href="gallery.html">Gallery</a>
+          <a class="footer-menu-button" href="sponsors.html">Sponsors</a>
+        </div>
+        <div class="footer-menu">
+          <h4><b>MORE</b></h4>
+          <a class="footer-menu-button" href="sign-up.html">Join Us</a>
+          <a class="footer-menu-button" href="sign-up.html">Contacts</a>
+          <a class="footer-menu-button" href="sign-up.html">Newsletter</a>
+        </div>
+        <div class="socials-logo-container-footer">
+          <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>
+          <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+          <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+          <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+        </div>
+      </div>
+      <hr>
+      <div style="width:82%;margin:0 auto;">
+        <p>Designed by Mathis Lefranc</p>
+      </div>
+    </footer>
   </body>
 </html>
