@@ -7,16 +7,43 @@
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/sponsors-contact.css">
-    <script src="scripts/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/script.js" type="text/javascript" charset="utf-8" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
-    <title></title>
   </head>
   <body>
-    <header-component></header-component>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a style="padding: 0 0;height: 50px;" href="index.html">
+          <img src="images/logo-copy.png" alt="">
+        </a>
+        <a href="index.html">
+          <div class="title-top">
+            Real Estate Club
+          </div>
+          <div class="title-bottom">
+            at McGill
+          </div>
+        </a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
+
 
       <div class="sponsors-contact-background">
         <div class="sponsors-contact-wrapper">
@@ -51,6 +78,33 @@
       </div>
 
     </main>
-    <footer-component></footer-component>
+    <footer>
+      <div class="footer-menu-container">
+        <div class="footer-menu">
+          <h4><b>EXPLORE</b></h4>
+          <a class="footer-menu-button" href="index.html">Home</a>
+          <a class="footer-menu-button" href="about.html">About</a>
+          <a class="footer-menu-button" href="events.html">Events</a>
+          <a class="footer-menu-button" href="gallery.html">Gallery</a>
+          <a class="footer-menu-button" href="sponsors.html">Sponsors</a>
+        </div>
+        <div class="footer-menu">
+          <h4><b>MORE</b></h4>
+          <a class="footer-menu-button" href="sign-up.html">Join Us</a>
+          <a class="footer-menu-button" href="sign-up.html">Contacts</a>
+          <a class="footer-menu-button" href="sign-up.html">Newsletter</a>
+        </div>
+        <div class="socials-logo-container-footer">
+          <a href="https://www.facebook.com/realestateclubmcgill/" target="_blank"><img src="images/icons/fb_icon.png" alt="facebook-icon"  class="socials-icons"></a>
+          <a href="https://www.instagram.com/realestateclubmcgill/" target="_blank"><img src="images/icons/insta_icon.png" alt="instagram-icon" class="socials-icons"></a>
+          <a href="https://www.linkedin.com/company/real-estate-club-at-mcgill-university/about/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="linkedin-icon" class="socials-icons"></a>
+          <a href="mailto:vpcommunication@reclub.ca" target="_blank"><img src="images/icons/mail_icon.png" alt="email-icon" class="socials-icons"></a>
+        </div>
+      </div>
+      <hr>
+      <div style="width:82%;margin:0 auto;">
+        <p>Designed by Mathis Lefranc</p>
+      </div>
+    </footer>
   </body>
 </html>

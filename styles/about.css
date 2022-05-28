@@ -50,23 +50,23 @@
   display: inline-block;
 }
 .our-team{
-    text-align: center;
-    padding: 20px 5px;
-    background: #1D376D;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin: 0 auto;
-    width: 220px;
+  text-align: center;
+  padding: 20px 5px;
+  background: #1D376D;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 220px;
 }
 .our-team .pic{
-    background: #fff;
-    margin: 0 auto;
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
+  background: #fff;
+  margin: 0 auto;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
 }
 .pic img{
     width: 144px;

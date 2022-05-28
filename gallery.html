@@ -7,113 +7,143 @@
     <title>home</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/gallery.css">
-    <script src="scripts/script.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
-    <title></title>
+
   </head>
   <body>
-    <header-component></header-component>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a style="padding: 0 0;height: 50px;" href="index.html">
+          <img src="images/logo-copy.png" alt="">
+        </a>
+        <a href="index.html">
+          <div class="title-top">
+            Real Estate Club
+          </div>
+          <div class="title-bottom">
+            at McGill
+          </div>
+        </a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="gallery-wrapper">
+        <div class="gallery-container">
+          <img src="images/icons/gallery-red.png" alt="gallery-icon">
+          <h3>PAST EVENTS</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Getting into Real Estate 2018</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Let’s Talk Real Estate 2018</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Guest Speaker Series March 2018</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Guest Speaker Series February 2018</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Guest Speaker Series January 2018</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>ARGUS Financial Modelling Workshop Fall 2017</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-title">
+            <h4>Recruitment and Networking Cocktail Fall 2017</h4>
+          </div>
+          <div class="event-carousel">
+            <div class="scroller-left">
+              <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
+            </div>
+            <div class="scroller-right">
+              <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
+            </div>
+          </div>
+        </div>
 
-    <div class="gallery-wrapper">
-      <div class="gallery-container">
-        <img src="images/icons/gallery-red.png" alt="gallery-icon">
-        <h3>PAST EVENTS</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Getting into Real Estate 2018</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Let’s Talk Real Estate 2018</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Guest Speaker Series March 2018</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Guest Speaker Series February 2018</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Guest Speaker Series January 2018</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>ARGUS Financial Modelling Workshop Fall 2017</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event-title">
-          <h4>Recruitment and Networking Cocktail Fall 2017</h4>
-        </div>
-        <div class="event-carousel">
-          <div class="scroller-left">
-            <img src="images/icons/arrow-icon.png" alt="left-arrow-icon">
-          </div>
-          <div class="scroller-right">
-            <img src="images/icons/arrow-icon.png" alt="right-arrow-icon">
-          </div>
-        </div>
-      </div>
+    </main>
+
       <!--
       <section class="row">
         <div class="nine columns">
