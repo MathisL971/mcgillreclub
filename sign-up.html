@@ -11,6 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h3>Become a member</h3>
+
+      <label for="name"><b>First Name</b></label>
+      <input type="text" placeholder="" name="name" required>
+
+      <label for="name"><b>Last Name</b></label>
+      <input type="text" placeholder="" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="firstname.lastname@mail.mcgill.ca" name="email" required>
+
+      <label for="program"><b>Program</b></label>
+      <input type="text" placeholder="Finance, Economics, Civil Engineering,..." name="program">
+
+      <label for="year"><b>Year</b></label>
+      <input type="text" placeholder="U0, U1, U2,..." name="year">
+
+      <button href="" class="btn">Purchase</button>
+      <button type="button" class="btn purchase" onclick="closeForm()">Close</button>
+    </form>
+  </div>
   <body>
     <nav class="navbar">
       <div class="brand-title">
@@ -38,12 +61,15 @@
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="sign-up.html">Join Us</a></li>
+          <li><a class="join-us-button" href="sign-up.html">Join Us</a></li>
         </ul>
       </div>
     </nav>
+
     <main>
+
       <div class="sign-up-page-background">
+
         <div class="sign-up-page-wrapper">
           <div class="sign-up-page-container">
             <div class="membership">
@@ -52,9 +78,12 @@
               <form class="purchase-form" action="sign-up.html" method="post">
                 <label for="tentacles" style="font-size:20px">Quantity:</label>
                 <input type="number" id="memberships" name="memberships" min="1" max="10"><br>
-                <input class="purchase-button" type="submit" value="Purchase">
+                <input onclick="openForm()" class="purchase-button" value="Purchase">
               </form>
             </div>
+
+
+
             <div class="membership-info">
               <h3>WHAT WILL YOU GET OUT OF IT?</h3>
               <ul>
